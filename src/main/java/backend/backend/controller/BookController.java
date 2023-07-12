@@ -15,6 +15,7 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import utils.Util;
 
 import java.util.List;
@@ -39,7 +40,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api/v1/book")
 @CrossOrigin("*")
-//@Tag(name = "book", description = "The book API")
+@Tag(name = "book", description = "The book API")
 public class BookController {
 
     @Autowired

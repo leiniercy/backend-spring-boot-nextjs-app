@@ -52,5 +52,5 @@ public class Book extends AbstractEntity {
     @NotNull(message = "Campo requerido")
     @Min(message = "Mínimo 0", value = 0)
     @Column(nullable = false)
-    private Double price;
+    private float price;
 }
